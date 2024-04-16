@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de origen\IO">
+      <UniqueIdentifier>{9829a0fe-c0c5-47fe-8e01-8ef4c4ef0ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\IO">
+      <UniqueIdentifier>{3d325365-da49-4ecb-b6b2-e3c41548ca3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Importaciones">
+      <UniqueIdentifier>{46e18b34-1220-4a39-9367-826773a56735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\SlipEngine">
+      <UniqueIdentifier>{56c18a0a-8bc5-4648-b870-6279edd119fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\SlipEngine">
+      <UniqueIdentifier>{84cad0c6-3b10-4060-ae8c-6c24f450da96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\FileDialog.cpp">
+      <Filter>Archivos de origen\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipModelExtract.cpp">
+      <Filter>Archivos de origen\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_widgets.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_demo.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_draw.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_impl_glfw.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_impl_opengl3.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_tables.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glad\src\glad.c">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipWindow.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipFrameBuffer.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipMaterial.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipMesh.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipShader.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipTexture.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipGlobals.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipInput.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipLevel.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipLight.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipBsp.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipActor.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipCamera.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipEntity.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipDebug.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipCollision.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipShadows.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipUI.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipSpawn.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipPhysics.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImSequencer.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\GraphEditor.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImCurveEdit.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImGradient.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImGuizmo.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipEditor.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\Recast.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastAlloc.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastArea.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastContour.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastFilter.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastLayers.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastMesh.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastMeshDetail.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastRasterization.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastRegion.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourAlloc.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourCommon.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNavMesh.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNavMeshBuilder.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNavMeshQuery.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNode.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipNavMesh.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\recastnavigation\DebugUtils\Source\RecastDump.cpp">
+      <Filter>Archivos de origen\Importaciones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SlipEngine\SlipTerrain.cpp">
+      <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SlipEngine\FileDialog.h">
+      <Filter>Archivos de encabezado\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\io.h">
+      <Filter>Archivos de encabezado\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipModelExtract.h">
+      <Filter>Archivos de encabezado\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipFrameBuffer.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipMaterial.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipMesh.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipShader.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipWindow.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipInput.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipLevel.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipLight.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipTexture.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipGlobals.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipID.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipBsp.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipActor.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipCamera.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipEntity.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipDebug.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipCollision.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipShadows.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipUI.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipSpawn.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipPhysics.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipEditor.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipNavMesh.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SlipEngine\SlipTerrain.h">
+      <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\slipspace_icon_play.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

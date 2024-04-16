@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c91722fc-2b76-4aa9-adb3-50218f19d878}</ProjectGuid>
+    <RootNamespace>SlipEditor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <SourcePath>A:\VisualStudioProjects\Slip\SlipEngine;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <SourcePath>A:\VisualStudioProjects\Slip\SlipEngine;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <SourcePath>A:\VisualStudioProjects\Slip\SlipEngine;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <SourcePath>A:\VisualStudioProjects\Slip\SlipEngine;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>A:\VisualStudioProjects\Dependencies\glm;A:\VisualStudioProjects\Dependencies\glad\include;A:\VisualStudioProjects\Dependencies\glfw\include;A:\VisualStudioProjects\Dependencies\stb;A:\VisualStudioProjects\Dependencies\imgui\include;A:\VisualStudioProjects\Dependencies\bulletphysics\src;A:\VisualStudioProjects\Dependencies\assimp\include;A:\VisualStudioProjects\Dependencies\imgui\ImGuizmo;A:\VisualStudioProjects\Dependencies\freetype\include;A:\VisualStudioProjects\Slip\SlipEngine;A:\VisualStudioProjects\Dependencies\recastnavigation\Recast\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Detour\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Dump\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>A:\VisualStudioProjects\Dependencies\assimp\lib\Debug;A:\VisualStudioProjects\Dependencies\glfw\lib-vc2022;A:\VisualStudioProjects\Dependencies\bulletphysics\lib\Debug;A:\VisualStudioProjects\Dependencies\freetype\libs\vs2015-2022\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;assimp-vc143-mtd.lib;opengl32.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;%(AdditionalDependencies);freetype.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>A:\VisualStudioProjects\Dependencies\glm;A:\VisualStudioProjects\Dependencies\glad\include;A:\VisualStudioProjects\Dependencies\glfw\include;A:\VisualStudioProjects\Dependencies\stb;A:\VisualStudioProjects\Dependencies\imgui\include;A:\VisualStudioProjects\Dependencies\bulletphysics\src;A:\VisualStudioProjects\Dependencies\assimp\include;A:\VisualStudioProjects\Dependencies\imgui\ImGuizmo;A:\VisualStudioProjects\Dependencies\freetype\include;A:\VisualStudioProjects\Slip\SlipEngine;A:\VisualStudioProjects\Dependencies\recastnavigation\Recast\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Detour\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Dump\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>A:\VisualStudioProjects\Dependencies\assimp\lib\Debug;A:\VisualStudioProjects\Dependencies\glfw\lib-vc2022;A:\VisualStudioProjects\Dependencies\bulletphysics\lib\Debug;A:\VisualStudioProjects\Dependencies\freetype\libs\vs2015-2022\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;assimp-vc143-mtd.lib;opengl32.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;%(AdditionalDependencies);freetype.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SLIP_EDITOR;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>A:\VisualStudioProjects\Dependencies\glm;A:\VisualStudioProjects\Dependencies\glad\include;A:\VisualStudioProjects\Dependencies\glfw\include;A:\VisualStudioProjects\Dependencies\stb;A:\VisualStudioProjects\Dependencies\imgui\include;A:\VisualStudioProjects\Dependencies\bulletphysics\src;A:\VisualStudioProjects\Dependencies\assimp\include;A:\VisualStudioProjects\Dependencies\imgui\ImGuizmo;A:\VisualStudioProjects\Dependencies\freetype\include;A:\VisualStudioProjects\Slip\SlipEngine;A:\VisualStudioProjects\Dependencies\recastnavigation\Recast\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Detour\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Dump\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>A:\VisualStudioProjects\Dependencies\assimp\lib\Debug;A:\VisualStudioProjects\Dependencies\glfw\lib-vc2022;A:\VisualStudioProjects\Dependencies\bulletphysics\lib\Debug;A:\VisualStudioProjects\Dependencies\freetype\libs\vs2015-2022\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;glfw3_mt.lib;assimp-vc143-mtd.lib;opengl32.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>A:\VisualStudioProjects\Dependencies\glm;A:\VisualStudioProjects\Dependencies\glad\include;A:\VisualStudioProjects\Dependencies\glfw\include;A:\VisualStudioProjects\Dependencies\stb;A:\VisualStudioProjects\Dependencies\imgui\include;A:\VisualStudioProjects\Dependencies\bulletphysics\src;A:\VisualStudioProjects\Dependencies\assimp\include;A:\VisualStudioProjects\Dependencies\imgui\ImGuizmo;A:\VisualStudioProjects\Dependencies\freetype\include;A:\VisualStudioProjects\Slip\SlipEngine;A:\VisualStudioProjects\Dependencies\recastnavigation\Recast\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Detour\Include;A:\VisualStudioProjects\Dependencies\recastnavigation\Dump\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>A:\VisualStudioProjects\Dependencies\assimp\lib\Debug;A:\VisualStudioProjects\Dependencies\glfw\lib-vc2022;A:\VisualStudioProjects\Dependencies\bulletphysics\lib\Debug;A:\VisualStudioProjects\Dependencies\freetype\libs\vs2015-2022\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;assimp-vc143-mtd.lib;opengl32.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;%(AdditionalDependencies);freetype.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\glad\src\glad.c" />
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\GraphEditor.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImCurveEdit.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImGradient.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImGuizmo.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImSequencer.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_demo.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_draw.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_tables.cpp" />
+    <ClCompile Include="..\..\Dependencies\imgui\src\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\DebugUtils\Source\RecastDump.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourAlloc.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourCommon.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNavMesh.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNavMeshBuilder.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNavMeshQuery.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Detour\Source\DetourNode.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\Recast.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastAlloc.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastArea.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastContour.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastFilter.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastLayers.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastMesh.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastMeshDetail.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastRasterization.cpp" />
+    <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\RecastRegion.cpp" />
+    <ClCompile Include="..\SlipEngine\FileDialog.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipActor.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipBsp.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipCamera.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipCollision.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipDebug.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipEditor.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipNavMesh.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipPhysics.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipSpawn.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipEntity.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipFrameBuffer.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipGlobals.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipInput.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipLevel.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipLight.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipMaterial.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipMesh.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipModelExtract.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipShader.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipShadows.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipTerrain.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipTexture.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipUI.cpp" />
+    <ClCompile Include="..\SlipEngine\SlipWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SlipEngine\FileDialog.h" />
+    <ClInclude Include="..\SlipEngine\io.h" />
+    <ClInclude Include="..\SlipEngine\SlipActor.h" />
+    <ClInclude Include="..\SlipEngine\SlipBsp.h" />
+    <ClInclude Include="..\SlipEngine\SlipCamera.h" />
+    <ClInclude Include="..\SlipEngine\SlipCollision.h" />
+    <ClInclude Include="..\SlipEngine\SlipDebug.h" />
+    <ClInclude Include="..\SlipEngine\SlipEditor.h" />
+    <ClInclude Include="..\SlipEngine\SlipNavMesh.h" />
+    <ClInclude Include="..\SlipEngine\SlipPhysics.h" />
+    <ClInclude Include="..\SlipEngine\SlipSpawn.h" />
+    <ClInclude Include="..\SlipEngine\SlipEntity.h" />
+    <ClInclude Include="..\SlipEngine\SlipFrameBuffer.h" />
+    <ClInclude Include="..\SlipEngine\SlipGlobals.h" />
+    <ClInclude Include="..\SlipEngine\SlipID.h" />
+    <ClInclude Include="..\SlipEngine\SlipInput.h" />
+    <ClInclude Include="..\SlipEngine\SlipLevel.h" />
+    <ClInclude Include="..\SlipEngine\SlipLight.h" />
+    <ClInclude Include="..\SlipEngine\SlipMaterial.h" />
+    <ClInclude Include="..\SlipEngine\SlipMesh.h" />
+    <ClInclude Include="..\SlipEngine\SlipModelExtract.h" />
+    <ClInclude Include="..\SlipEngine\SlipShader.h" />
+    <ClInclude Include="..\SlipEngine\SlipShadows.h" />
+    <ClInclude Include="..\SlipEngine\SlipTerrain.h" />
+    <ClInclude Include="..\SlipEngine\SlipTexture.h" />
+    <ClInclude Include="..\SlipEngine\SlipUI.h" />
+    <ClInclude Include="..\SlipEngine\SlipWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\slipspace_icon_play.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
