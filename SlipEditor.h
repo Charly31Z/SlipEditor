@@ -49,7 +49,7 @@ private:
 	std::string materials_name = "";
 	const char* playBtn = "Play";
 	int entitySelected;
-	int uiSelected;
+	std::string uiSelected;
 
 	int matSelected = 0;
 

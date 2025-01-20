@@ -72,7 +72,7 @@ int main()
 
 	ui->image("shadowmap", shadow->getDepthMap(), glm::vec2(0.75f, -0.7f)).scale = glm::vec2(1.f, 15.f);
 
-	auto texto = ui->text("test", "Dssadasdasfasfsa", glm::vec2(28.f, 0.f));
+	auto texto = ui->text("test", "Dssadasdasfasfsa", glm::vec2(0.f, 0.f));
 
 	SlipCamera* cam = new SlipCamera();
 

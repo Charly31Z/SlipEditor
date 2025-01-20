@@ -138,9 +138,6 @@
     <ClCompile Include="..\..\Dependencies\imgui\ImGuizmo\ImGuizmo.cpp">
       <Filter>Archivos de origen\Importaciones</Filter>
     </ClCompile>
-    <ClCompile Include="..\SlipEngine\SlipEditor.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Dependencies\recastnavigation\Recast\Source\Recast.cpp">
       <Filter>Archivos de origen\Importaciones</Filter>
     </ClCompile>
@@ -197,6 +194,9 @@
     </ClCompile>
     <ClCompile Include="..\SlipEngine\SlipTerrain.cpp">
       <Filter>Archivos de origen\SlipEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SlipEditor.cpp">
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -272,14 +272,14 @@
     <ClInclude Include="..\SlipEngine\SlipPhysics.h">
       <Filter>Archivos de encabezado\SlipEngine</Filter>
     </ClInclude>
-    <ClInclude Include="..\SlipEngine\SlipEditor.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="..\SlipEngine\SlipNavMesh.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\SlipEngine\SlipTerrain.h">
       <Filter>Archivos de encabezado\SlipEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SlipEditor.h">
+      <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

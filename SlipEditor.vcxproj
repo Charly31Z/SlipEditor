@@ -192,7 +192,6 @@
     <ClCompile Include="..\SlipEngine\SlipCamera.cpp" />
     <ClCompile Include="..\SlipEngine\SlipCollision.cpp" />
     <ClCompile Include="..\SlipEngine\SlipDebug.cpp" />
-    <ClCompile Include="..\SlipEngine\SlipEditor.cpp" />
     <ClCompile Include="..\SlipEngine\SlipNavMesh.cpp" />
     <ClCompile Include="..\SlipEngine\SlipPhysics.cpp" />
     <ClCompile Include="..\SlipEngine\SlipSpawn.cpp" />
@@ -212,6 +211,7 @@
     <ClCompile Include="..\SlipEngine\SlipUI.cpp" />
     <ClCompile Include="..\SlipEngine\SlipWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SlipEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\SlipEngine\FileDialog.h" />
@@ -221,7 +221,6 @@
     <ClInclude Include="..\SlipEngine\SlipCamera.h" />
     <ClInclude Include="..\SlipEngine\SlipCollision.h" />
     <ClInclude Include="..\SlipEngine\SlipDebug.h" />
-    <ClInclude Include="..\SlipEngine\SlipEditor.h" />
     <ClInclude Include="..\SlipEngine\SlipNavMesh.h" />
     <ClInclude Include="..\SlipEngine\SlipPhysics.h" />
     <ClInclude Include="..\SlipEngine\SlipSpawn.h" />
@@ -241,6 +240,7 @@
     <ClInclude Include="..\SlipEngine\SlipTexture.h" />
     <ClInclude Include="..\SlipEngine\SlipUI.h" />
     <ClInclude Include="..\SlipEngine\SlipWindow.h" />
+    <ClInclude Include="SlipEditor.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\slipspace_icon_play.png" />

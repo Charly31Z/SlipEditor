@@ -15,6 +15,7 @@
 #include "SlipTexture.h"
 
 #include "SlipID.h"
+#include "SlipUI.h"
 
 bool EntitiesGetter(void* data, int index, const char** out_text)
 {
@@ -605,29 +606,26 @@ void SlipEditor::renderProperties()
                 }
             }
             break;
-            /*case SlipEditor::UI:
+            case SlipEditor::UI:
                 {
                     float pos[2] = {
-                        uis[uiSelected].position.x,
-                        uis[uiSelected].position.y
+                        SlipUI::Get().elements[uiSelected]->position.x,
+                        SlipUI::Get().elements[uiSelected]->position.y
                     };
-                    float rot[2] = {
-                        entities[entitySelected].rotation.x,
-                        entities[entitySelected].rotation.y
-                    };
+                    float rot = SlipUI::Get().elements[uiSelected]->rotation;
                     float sca[2] = {
-                        uis[uiSelected].scale.x,
-                        uis[uiSelected].scale.y
+                        SlipUI::Get().elements[uiSelected]->scale.x,
+                        SlipUI::Get().elements[uiSelected]->scale.y
                     };
 
                     ImGui::InputFloat2("Translate", pos);
-                    //ImGui::SliderFloat2("Rotate", rot, 0.f, 3.f);
+                    //ImGui::SliderFloat("Rotate", &rot);
                     ImGui::SliderFloat2("Scale", sca, 0.f, 3.f);
-                    uis[uiSelected].position = glm::vec2(pos[0], pos[1]);
+                    SlipUI::Get().elements[uiSelected]->position = glm::vec2(pos[0], pos[1]);
                     //uis[uiSelected].rotation = glm::vec3(rot[0], rot[1], rot[2]);
-                    uis[uiSelected].scale = glm::vec2(sca[0], sca[1]);
+                    SlipUI::Get().elements[uiSelected]->scale = glm::vec2(sca[0], sca[1]);
                 }
-                break;*/
+                break;
             }
 
             ImGui::End();
@@ -787,6 +785,17 @@ void SlipEditor::renderScene()
                     if (ImGui::IsItemClicked()) {
                         selectedType = i;
                         prop = SlipEditor::MODEL;
+                    }
+                }
+            }
+            case 1:
+            {
+                for (const auto& [key, value] : SlipUI::Get().elements)
+                {
+                    ImGui::Text(key.c_str());
+                    if (ImGui::IsItemClicked()) {
+                        uiSelected = key;
+                        prop = SlipEditor::UI;
                     }
                 }
             }
